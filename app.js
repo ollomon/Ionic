@@ -36,15 +36,7 @@ const presentarAlerta = () => {
 boton_guardar.addEventListener('click', () =>{
     const nombre = nombre_producto.value;
     const precio = precio_producto.value;
-    //console.log(nombre, precio);
-    
-    //if (estaVacio(nombre)) alert("El Nombre está vacío");
-
-    //if (estaVacio(nombre) || precio <=0 || estaVacio(precio)){
-    //    alert("Datos No Válidos")
-    //    return;
-    //}
-
+   
     if (nombre != '' && precio != '') {
         crearNuevoProducto(nombre, precio);
         total += +precio; // el + convierte precio en un número, ya que es un string
